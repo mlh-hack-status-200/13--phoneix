@@ -1,0 +1,15 @@
+PROBLEMS
+1->Low profit margin for farmers because of too many intermediators.
+2->Increasing number of suicides of farmers due to low economical condition and general crop trend.
+3-> Almost 40%-45%  produce is waste right from the source to the end user consumption. 
+
+SOLUTION
+1->Our web application will empower farmer to directly engage with customer.
+
+Our web application will allow farmer to set the price their goods according to their own will.
+Our application does not require any smartphone,farmers can directly call our tollfree number and get themselves register or choose to login by pressing 1 or 2.After login our AI chatbot powered br 'GOOGLE CLOUD PLATFORM' dialogue API will ask about the user id, type of product and save the required information and update the server databade.
+Their will be a separate section for food products which are damaged or small in size ornot  good in shape will be sold at low price .It will be helpful for unpriveledged.
+One separate section for food items which are about to get rotten
+will be sold by a farmer at low price. It will be called MEGA SALE SECTION
+
+
