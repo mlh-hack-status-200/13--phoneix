@@ -1,0 +1,93 @@
+import React, { Component } from "react";
+import { StyleSheet, View, Image, ImageBackground, Text } from "react-native";
+import MaterialButtonPrimary from "./components/MaterialButtonPrimary";
+import MaterialButtonWithVioletText from "./components/MaterialButtonWithVioletText";
+import MaterialButtonWithVioletText1 from "./components/MaterialButtonWithVioletText1";
+
+function Index(props) {
+  return (
+    <View style={styles.container}>
+      <MaterialButtonPrimary
+        style={styles.materialButtonPrimary}
+      ></MaterialButtonPrimary>
+      <ImageBackground
+        source={require("./assets/images/agriculture-website-templates3.jpg")}
+        resizeMode="stretch"
+        style={styles.image}
+        imageStyle={styles.image_imageStyle}
+      >
+        <View style={styles.loginStackRow}>
+          <View style={styles.loginStack}>
+            <MaterialButtonWithVioletText
+              style={styles.login}
+            ></MaterialButtonWithVioletText>
+            <Text style={styles.loremIpsum}></Text>
+          </View>
+          <MaterialButtonWithVioletText1
+            style={styles.signup}
+          ></MaterialButtonWithVioletText1>
+        </View>
+      </ImageBackground>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    width: 1366,
+    height: 1252
+  },
+  materialButtonPrimary: {
+    width: 100,
+    height: 36,
+    marginLeft: 925
+  },
+  image: {
+    width: 1366,
+    height: 936,
+    flexDirection: "row",
+    marginTop: 280
+  },
+  image_imageStyle: {},
+  login: {
+    top: 0,
+    left: 0,
+    width: 100,
+    height: 36,
+    backgroundColor: "rgba(32,182,230,1)",
+    position: "absolute",
+    opacity: 0
+  },
+  loremIpsum: {
+    top: 18,
+    left: 74,
+    color: "#121212",
+    position: "absolute",
+    fontSize: 14,
+    fontFamily: "roboto-regular",
+    lineHeight: 20,
+    letterSpacing: 1
+  },
+  loginStack: {
+    width: 100,
+    height: 36
+  },
+  signup: {
+    width: 100,
+    height: 36,
+    backgroundColor: "rgba(25,205,253,1)",
+    marginLeft: 879,
+    marginTop: 5
+  },
+  loginStackRow: {
+    height: 41,
+    flexDirection: "row",
+    flex: 1,
+    marginRight: 156,
+    marginLeft: 131,
+    marginTop: 2
+  }
+});
+
+export default Index;
+
